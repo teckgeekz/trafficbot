@@ -118,10 +118,10 @@ const venenoTrafficBot = async id => {
 	});
 
 	let gotourl, addtourl;
-	let utm_source = ['Google','facebook','twitter','instagram','Bing','Yahoo','DuckDuckGo','LinkedIn','Reddit','DuckDuckGo','Quora']
+	let utm_source = ['Google','facebook','twitter','instagram','Bing','Yahoo','DuckDuckGo','LinkedIn','Reddit','DuckDuckGo','Kayak','Expedia']
 	let utm_medium = ['cpc', 'Organic'];
 	let utm_campaign = ['', ''];
-	let utm_term = ['ppplayer','ppplayer+music','music', 'online', 'listen+online+music', 'ppplayer+online', 'play+music', 'digital', 'ppplayer+playlist', 'artist', 'playlist', 'ppplayer+web'];
+	let utm_term = ['book+flights','discounted+flghts','delta+airlines', 'airfares', 'southwest+flights', 'jetblue+flights', 'airlines', 'jetcost', 'group+flights+discounts', 'group+travel', 'flyswa', 'delta+airlines+flights'];
 	
 	addtourl = utm_source != '' ? '?utm_source='+ utm_source.randomElement() : '';
 	addtourl = utm_source != '' && utm_medium != '' ? addtourl+'&utm_medium='+utm_medium.randomElement() : addtourl;
